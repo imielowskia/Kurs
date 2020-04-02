@@ -1,0 +1,61 @@
+Skrypt uruchomiony 2020-04-02 13:29:45+0200
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails g scaffold Grupa nazwa:string rok[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kname:string year:integer semstr:ui[K[Kintegerestr:integer[C[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1P semestr:integer[1Psemestr:integer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Running via Spring preloader in process 24522
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20200402113148_create_grupas.rb
+[1m[32m      create[0m    app/models/grupa.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/grupa_test.rb
+[1m[32m      create[0m      test/fixtures/grupas.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :grupas
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/grupas_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/grupas
+[1m[32m      create[0m      app/views/grupas/index.html.erb
+[1m[32m      create[0m      app/views/grupas/edit.html.erb
+[1m[32m      create[0m      app/views/grupas/show.html.erb
+[1m[32m      create[0m      app/views/grupas/new.html.erb
+[1m[32m      create[0m      app/views/grupas/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/grupas_controller_test.rb
+[1m[32m      create[0m      test/system/grupas_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/grupas_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/grupas/index.json.jbuilder
+[1m[32m      create[0m      app/views/grupas/show.json.jbuilder
+[1m[32m      create[0m      app/views/grupas/_grupa.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/grupas.scss
+[1m[37m      invoke[0m  scss
+[1m[32m      create[0m    app/assets/stylesheets/scaffolds.scss
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rake db:migt[Krate
+== 20200402113148 CreateGrupas: migrating =====================================
+-- create_table(:grupas)
+   -> 0.0022s
+== 20200402113148 CreateGrupas: migrated (0.0027s) ============================
+
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails g scaffold Sti[Kudent name:string sname:string grupa:references
+Running via Spring preloader in process 24648
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20200402113258_create_students.rb
+[1m[32m      create[0m    app/models/student.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/student_test.rb
+[1m[32m      create[0m      test/fixtures/students.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :students
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/students_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/students
+[1m[32m      create[0m      app/views/students/index.html.erb
+[1m[32m      create[0m      app/views/students/edit.html.erb
+[1m[32m      create[0m      app/views/students/show.html.erb
+[1m[32m      create[0m      app/views/students/new.html.erb
+[1m[32m      create[0m      app/views/students/_form.html.erb
+[1m[37m      invoke[0m  
