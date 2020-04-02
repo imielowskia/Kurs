@@ -1,0 +1,27 @@
+<%= form_with(model: grupa, local: true) do |form| %>
+  <% if grupa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grupa.errors.count, "error") %> prohibited this grupa from being saved:</h2>
+
+      <ul>
+        <% grupa.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :semestr %>
+    <%= form.number_field :semestr %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
