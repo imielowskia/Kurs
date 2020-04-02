@@ -58,4 +58,365 @@ Running via Spring preloader in process 24648
 [1m[32m      create[0m      app/views/students/show.html.erb
 [1m[32m      create[0m      app/views/students/new.html.erb
 [1m[32m      create[0m      app/views/students/_form.html.erb
-[1m[37m      invoke[0m  
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/students_controller_test.rb
+[1m[32m      create[0m      test/system/students_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/students_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/students/index.json.jbuilder
+[1m[32m      create[0m      app/views/students/show.json.jbuilder
+[1m[32m      create[0m      app/views/students/_student.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/students.scss
+[1m[37m      invoke[0m  scss
+[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.scss
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails g scaffold Student name:string sname:string grupa:references[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[K
+== 20200402113258 CreateStudents: migrating ===================================
+-- create_table(:students)
+   -> 0.0051s
+== 20200402113258 CreateStudents: migrated (0.0053s) ==========================
+
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git branch po_wygenerowan[K[K[K[K[K[K[K[K[K[K[K[K[K[K"po wygenerowaniu tabel"
+fatal: 'po wygenerowaniu tabel' jest nieprawidłową nazwą gałęzi.
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git branch "po wygenerowaniu tabel"[C[K[1P[C[C[1@_[1P[C[C[C[C[C[C[C[C[C[C[C[C[C_ tabel[1Ptabel
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git checkout po_wygenerowaniu_tabel 
+M	config/routes.rb
+Switched to branch 'po_wygenerowaniu_tabel'
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git add .
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git commit -m "postcss.config.js" [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K_wygenerowaniu_tabel"
+[po_wygenerowaniu_tabel 7ad1fb1] po_wygenerowaniu_tabel
+ 38 files changed, 748 insertions(+)
+ create mode 100644 app/assets/stylesheets/grupas.scss
+ create mode 100644 app/assets/stylesheets/scaffolds.scss
+ create mode 100644 app/assets/stylesheets/students.scss
+ create mode 100644 app/controllers/grupas_controller.rb
+ create mode 100644 app/controllers/students_controller.rb
+ create mode 100644 app/helpers/grupas_helper.rb
+ create mode 100644 app/helpers/students_helper.rb
+ create mode 100644 app/models/grupa.rb
+ create mode 100644 app/models/student.rb
+ create mode 100644 app/views/grupas/_form.html.erb
+ create mode 100644 app/views/grupas/_grupa.json.jbuilder
+ create mode 100644 app/views/grupas/edit.html.erb
+ create mode 100644 app/views/grupas/index.html.erb
+ create mode 100644 app/views/grupas/index.json.jbuilder
+ create mode 100644 app/views/grupas/new.html.erb
+ create mode 100644 app/views/grupas/show.html.erb
+ create mode 100644 app/views/grupas/show.json.jbuilder
+ create mode 100644 app/views/students/_form.html.erb
+ create mode 100644 app/views/students/_student.json.jbuilder
+ create mode 100644 app/views/students/edit.html.erb
+ create mode 100644 app/views/students/index.html.erb
+ create mode 100644 app/views/students/index.json.jbuilder
+ create mode 100644 app/views/students/new.html.erb
+ create mode 100644 app/views/students/show.html.erb
+ create mode 100644 app/views/students/show.json.jbuilder
+ create mode 100644 cw2.log
+ create mode 100644 db/migrate/20200402113148_create_grupas.rb
+ create mode 100644 db/migrate/20200402113258_create_students.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 test/controllers/grupas_controller_test.rb
+ create mode 100644 test/controllers/students_controller_test.rb
+ create mode 100644 test/fixtures/grupas.yml
+ create mode 100644 test/fixtures/students.yml
+ create mode 100644 test/models/grupa_test.rb
+ create mode 100644 test/models/student_test.rb
+ create mode 100644 test/system/grupas_test.rb
+ create mode 100644 test/system/students_test.rb
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git push -u origin po_wygenerowaniu [K_tabel
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects:   1% (1/53)   Compressing objects:   3% (2/53)   Compressing objects:   5% (3/53)   Compressing objects:   7% (4/53)   Compressing objects:   9% (5/53)   Compressing objects:  11% (6/53)   Compressing objects:  13% (7/53)   Compressing objects:  15% (8/53)   Compressing objects:  16% (9/53)   Compressing objects:  18% (10/53)   Compressing objects:  20% (11/53)   Compressing objects:  22% (12/53)   Compressing objects:  24% (13/53)   Compressing objects:  26% (14/53)   Compressing objects:  28% (15/53)   Compressing objects:  30% (16/53)   Compressing objects:  32% (17/53)   Compressing objects:  33% (18/53)   Compressing objects:  35% (19/53)   Compressing objects:  37% (20/53)   Compressing objects:  39% (21/53)   Compressing objects:  41% (22/53)   Compressing objects:  43% (23/53)   Compressing objects:  45% (24/53)   Compressing objects:  47% (25/53)   Compressing objects:  49% (26/53)   Compressing objects:  50% (27/53)   Compressing objects:  52% (28/53)   Compressing objects:  54% (29/53)   Compressing objects:  56% (30/53)   Compressing objects:  58% (31/53)   Compressing objects:  60% (32/53)   Compressing objects:  62% (33/53)   Compressing objects:  64% (34/53)   Compressing objects:  66% (35/53)   Compressing objects:  67% (36/53)   Compressing objects:  69% (37/53)   Compressing objects:  71% (38/53)   Compressing objects:  73% (39/53)   Compressing objects:  75% (40/53)   Compressing objects:  77% (41/53)   Compressing objects:  79% (42/53)   Compressing objects:  81% (43/53)   Compressing objects:  83% (44/53)   Compressing objects:  84% (45/53)   Compressing objects:  86% (46/53)   Compressing objects:  88% (47/53)   Compressing objects:  90% (48/53)   Compressing objects:  92% (49/53)   Compressing objects:  94% (50/53)   Compressing objects:  96% (51/53)   Compressing objects:  98% (52/53)   Compressing objects: 100% (53/53)   Compressing objects: 100% (53/53), done.
+Writing objects:   1% (1/57)   Writing objects:   3% (2/57)   Writing objects:   5% (3/57)   Writing objects:   7% (4/57)   Writing objects:   8% (5/57)   Writing objects:  12% (7/57)   Writing objects:  14% (8/57)   Writing objects:  15% (9/57)   Writing objects:  19% (11/57)   Writing objects:  21% (12/57)   Writing objects:  22% (13/57)   Writing objects:  24% (14/57)   Writing objects:  26% (15/57)   Writing objects:  28% (16/57)   Writing objects:  29% (17/57)   Writing objects:  31% (18/57)   Writing objects:  33% (19/57)   Writing objects:  36% (21/57)   Writing objects:  38% (22/57)   Writing objects:  40% (23/57)   Writing objects:  43% (25/57)   Writing objects:  45% (26/57)   Writing objects:  47% (27/57)   Writing objects:  49% (28/57)   Writing objects:  50% (29/57)   Writing objects:  52% (30/57)   Writing objects:  54% (31/57)   Writing objects:  56% (32/57)   Writing objects:  57% (33/57)   Writing objects:  59% (34/57)   Writing objects:  61% (35/57)   Writing objects:  63% (36/57)   Writing objects:  64% (37/57)   Writing objects:  66% (38/57)   Writing objects:  68% (39/57)   Writing objects:  70% (40/57)   Writing objects:  71% (41/57)   Writing objects:  73% (42/57)   Writing objects:  75% (43/57)   Writing objects:  77% (44/57)   Writing objects:  78% (45/57)   Writing objects:  80% (46/57)   Writing objects:  84% (48/57)   Writing objects:  85% (49/57)   Writing objects:  89% (51/57)   Writing objects:  91% (52/57)   Writing objects:  94% (54/57)   Writing objects:  96% (55/57)   Writing objects: 100% (57/57)   Writing objects: 100% (57/57), 9.40 KiB | 962.00 KiB/s, done.
+Total 57 (delta 13), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/13)[Kremote: Resolving deltas:   7% (1/13)[Kremote: Resolving deltas:  15% (2/13)[Kremote: Resolving deltas:  23% (3/13)[Kremote: Resolving deltas:  30% (4/13)[Kremote: Resolving deltas:  38% (5/13)[Kremote: Resolving deltas:  46% (6/13)[Kremote: Resolving deltas:  53% (7/13)[Kremote: Resolving deltas:  61% (8/13)[Kremote: Resolving deltas:  69% (9/13)[Kremote: Resolving deltas:  76% (10/13)[Kremote: Resolving deltas:  84% (11/13)[Kremote: Resolving deltas:  92% (12/13)[Kremote: Resolving deltas: 100% (13/13)[Kremote: Resolving deltas: 100% (13/13), completed with 5 local objects.[K
+remote: 
+remote: Create a pull request for 'po_wygenerowaniu_tabel' on GitHub by visiting:[K
+remote:      https://github.com/imielowskia/Kurs/pull/new/po_wygenerowaniu_tabel[K
+remote: 
+To https://github.com/imielowskia/Kurs.git
+ * [new branch]      po_wygenerowaniu_tabel -> po_wygenerowaniu_tabel
+Branch 'po_wygenerowaniu_tabel' set up to track remote branch 'po_wygenerowaniu_tabel' from 'origin'.
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git push -u origin po_wygenerowaniu_tabel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcommit -m "po_wygenerowaniu_tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcheckout po_wygenerowaniu_tabel [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pbranch po_wygenerowaniu_tabel"po wygenerowaniu tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Prake db:migrateils g scaffold Student name:string sname:string grupa:references[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[Kils g scaffold Grupa name:string semestr:integer^C
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git push -u origin po_wygenerowaniu_tabel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcommit -m "po_wygenerowaniu_tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcheckout po_wygenerowaniu_tabel [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pbranch po_wygenerowaniu_tabel"po wygenerowaniu tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Prake db:migrateils g scaffold Student name:string sname:string grupa:references[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[Kils g scaffold Grupa name:string semestr:integer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[Kils g scaffold Student name:string sname:string grupa:references[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[Kgit branch "po wygenerowaniu tabel"[2Ppo_wygenerowaniu_tabelcheckout po_wygenerowaniu_tabel [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcommit -m "po_wygenerowaniu_tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush -u origin po_wygenerowaniu_tabel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kclear
+[3J[H[2J]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails s
+=> Booting Puma
+=> Rails 6.0.2.2 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 4.3.3 (ruby 2.6.3-p62), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://127.0.0.1:3000
+* Listening on tcp://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/" for 127.0.0.1 at 2020-04-02 13:45:43 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/and/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/and/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.3ms | Allocations: 478)
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 2723)
+
+
+Started GET "/grupas" for 127.0.0.1 at 2020-04-02 13:45:50 +0200
+Processing by GrupasController#index as HTML
+  Rendering grupas/index.html.erb within layouts/application
+  [1m[36mGrupa Load (0.2ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas"[0m
+  ↳ app/views/grupas/index.html.erb:15
+  Rendered grupas/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1291)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/and/kurs_rails/cw2/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.42.1
+Time: 2509ms
+Built at: 2020-04-02 1:45:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 4598ms (Views: 4593.0ms | ActiveRecord: 0.9ms | Allocations: 26901)
+
+
+Started GET "/grupas/new" for 127.0.0.1 at 2020-04-02 13:45:58 +0200
+Processing by GrupasController#new as HTML
+  Rendering grupas/new.html.erb within layouts/application
+  Rendered grupas/_form.html.erb (Duration: 19.2ms | Allocations: 5248)
+  Rendered grupas/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 5602)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 38.0ms | ActiveRecord: 1.3ms | Allocations: 12237)
+
+
+Started POST "/grupas" for 127.0.0.1 at 2020-04-02 13:46:09 +0200
+Processing by GrupasController#create as HTML
+  Parameters: {"authenticity_token"=>"h2k8VyWvl4XJH2k+BE2oVdrEk2StOzqTXddO/cK8UA3+1zAS9/mr5EV88eXZNRdDikLbgNoJpXSTwbjbqMWddg==", "grupa"=>{"name"=>"grupa 1", "semestr"=>"6"}, "commit"=>"Create Grupa"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/grupas_controller.rb:30:in `block in create'
+  [1m[36mGrupa Create (0.8ms)[0m  [1m[32mINSERT INTO "grupas" ("name", "semestr", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "grupa 1"], ["semestr", 6], ["created_at", "2020-04-02 11:46:09.535808"], ["updated_at", "2020-04-02 11:46:09.535808"]]
+  ↳ app/controllers/grupas_controller.rb:30:in `block in create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/grupas_controller.rb:30:in `block in create'
+Redirected to http://0.0.0.0:3000/grupas/1
+Completed 302 Found in 17ms (ActiveRecord: 7.7ms | Allocations: 3709)
+
+
+Started GET "/grupas/1" for 127.0.0.1 at 2020-04-02 13:46:09 +0200
+Processing by GrupasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrupa Load (0.3ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/grupas_controller.rb:67:in `set_grupa'
+  Rendering grupas/show.html.erb within layouts/application
+  Rendered grupas/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 271)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 4764)
+
+
+Started GET "/grupas" for 127.0.0.1 at 2020-04-02 13:46:10 +0200
+Processing by GrupasController#index as HTML
+  Rendering grupas/index.html.erb within layouts/application
+  [1m[36mGrupa Load (0.2ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas"[0m
+  ↳ app/views/grupas/index.html.erb:15
+  Rendered grupas/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 732)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 4141)
+
+
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:46:25 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  Rendered students/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1194)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 0.5ms | Allocations: 6359)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2020-04-02 13:46:27 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (Duration: 4.2ms | Allocations: 1428)
+  Rendered students/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1769)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 12.2ms | ActiveRecord: 0.9ms | Allocations: 8740)
+
+
+Started POST "/students" for 127.0.0.1 at 2020-04-02 13:46:52 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"oGND1G1RDwLQ3dpSzRsoIcGAoScUVHENolPjA4c4yZmv5KidvEgxr/k9v0J5vzcpc+YH8G9EFkIc5sRUv3FxhQ==", "student"=>{"name"=>"Jan", "sname"=>"Kowalski", "grupa_id"=>"1"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:30:in `block in create'
+  [1m[36mGrupa Load (0.2ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:30:in `block in create'
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "sname", "grupa_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jan"], ["sname", "Kowalski"], ["grupa_id", 1], ["created_at", "2020-04-02 11:46:52.794958"], ["updated_at", "2020-04-02 11:46:52.794958"]]
+  ↳ app/controllers/students_controller.rb:30:in `block in create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:30:in `block in create'
+Redirected to http://0.0.0.0:3000/students/1
+Completed 302 Found in 32ms (ActiveRecord: 6.6ms | Allocations: 8165)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2020-04-02 13:46:52 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `set_student'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 4475)
+
+
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:46:54 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  Rendered students/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 4144)
+
+
+^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-04-02 13:47:52 +0200 ===
+- Goodbye!
+Exiting
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails s[2Pclear
+[3J[H[2J]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ clearrails s
+=> Booting Puma
+=> Rails 6.0.2.2 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 4.3.3 (ruby 2.6.3-p62), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://127.0.0.1:3000
+* Listening on tcp://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:49:43 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  Rendered students/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 7989)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms | Allocations: 11078)
+
+
+  
+SyntaxError (/home/and/kurs_rails/cw2/app/models/grupa.rb:2: syntax error, unexpected ':', expecting end
+  has_many: students
+          ^):
+  
+app/models/grupa.rb:2: syntax error, unexpected ':', expecting end
+app/models/grupa.rb:2: syntax error, unexpected ':', expecting end
+app/models/grupa.rb:2: syntax error, unexpected ':', expecting end
+app/views/students/index.html.erb:20
+app/views/students/index.html.erb:16
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:50:04 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  [1m[36mGrupa Load (0.3ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 36.9ms | Allocations: 11203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 2.4ms | Allocations: 18230)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2020-04-02 13:57:16 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `set_student'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGrupa Load (0.3ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas"[0m
+  ↳ app/views/students/_form.html.erb:26
+  Rendered students/_form.html.erb (Duration: 18.5ms | Allocations: 6352)
+  Rendered students/edit.html.erb within layouts/application (Duration: 19.6ms | Allocations: 6750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.5ms | Allocations: 11630)
+
+
+Started PATCH "/students/1" for 127.0.0.1 at 2020-04-02 13:57:28 +0200
+Processing by StudentsController#update as HTML
+  Parameters: {"authenticity_token"=>"93qjSFcE8nf+pHbyiCjnvBbbv6MeYUxF6B3cE9+zQylRP06yV2qPj4WPEw79GYz9pIOCd8PiLXcdkvoSD5aTSQ==", "student"=>{"name"=>"Jan", "sname"=>"Kowalski", "grupa_id"=>"1"}, "commit"=>"Update Student", "id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `set_student'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:44:in `block in update'
+  [1m[36mGrupa Load (0.3ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:44:in `block in update'
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:44:in `block in update'
+Redirected to http://0.0.0.0:3000/students/1
+Completed 302 Found in 17ms (ActiveRecord: 0.6ms | Allocations: 3727)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2020-04-02 13:57:29 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `set_student'
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 4366)
+
+
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:57:30 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  [1m[36mGrupa Load (0.2ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 5262)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2020-04-02 13:57:54 +0200
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `set_student'
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mGrupa Load (0.2ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas"[0m
+  ↳ app/views/students/_form.html.erb:26
+  Rendered students/_form.html.erb (Duration: 4.8ms | Allocations: 1624)
+  Rendered students/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 5651)
+
+
+Started GET "/students" for 127.0.0.1 at 2020-04-02 13:58:02 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:16
+  [1m[36mGrupa Load (0.1ms)[0m  [1m[34mSELECT "grupas".* FROM "grupas" WHERE "grupas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 4835)
+
+
+^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-04-02 13:58:17 +0200 ===
+- Goodbye!
+Exiting
+]0;and@e: ~/kurs_rails/cw2[01;32ma
