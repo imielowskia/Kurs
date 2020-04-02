@@ -419,4 +419,32 @@ Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 483
 === puma shutdown: 2020-04-02 13:58:17 +0200 ===
 - Goodbye!
 Exiting
-]0;and@e: ~/kurs_rails/cw2[01;32ma
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ rails s[2Pclearrails s[2Pcleargit push -u origin po_wygenerowaniu_tabel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcommit -m "po_wygenerowaniu_tabel"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcheckout po_wygenerowaniu_tabel [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pbranch po_wygenerowaniu_tabel[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdodaniu [K_obslugi_relacji_1
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git checkout po_dodaniu_obslugi_relacji_1 
+M	app/models/grupa.rb
+M	app/views/students/_form.html.erb
+M	app/views/students/index.html.erb
+M	cw2.log
+Switched to branch 'po_dodaniu_obslugi_relacji_1'
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git commit[K[K[K[K[K[K[K[K[K[Kgit add .
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git commit -m "po_dodaniu_obsł[Klugi_relacji_1"
+[po_dodaniu_obslugi_relacji_1 759d089] po_dodaniu_obslugi_relacji_1
+ 4 files changed, 365 insertions(+), 3 deletions(-)
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ git puss[Kh -u origin po_dodaniu_obslugi_relacji_1
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 5.80 KiB | 2.90 MiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)[Kremote: Resolving deltas:  14% (1/7)[Kremote: Resolving deltas:  28% (2/7)[Kremote: Resolving deltas:  42% (3/7)[Kremote: Resolving deltas:  57% (4/7)[Kremote: Resolving deltas:  71% (5/7)[Kremote: Resolving deltas:  85% (6/7)[Kremote: Resolving deltas: 100% (7/7)[Kremote: Resolving deltas: 100% (7/7), completed with 7 local objects.[K
+remote: 
+remote: Create a pull request for 'po_dodaniu_obslugi_relacji_1' on GitHub by visiting:[K
+remote:      https://github.com/imielowskia/Kurs/pull/new/po_dodaniu_obslugi_relacji_1[K
+remote: 
+To https://github.com/imielowskia/Kurs.git
+ * [new branch]      po_dodaniu_obslugi_relacji_1 -> po_dodaniu_obslugi_relacji_1
+Branch 'po_dodaniu_obslugi_relacji_1' set up to track remote branch 'po_dodaniu_obslugi_relacji_1' from 'origin'.
+]0;and@e: ~/kurs_rails/cw2[01;32mand@e[00m:[01;34m~/kurs_rails/cw2[00m$ exit
+exit
+
+Skrypt wykonany 2020-04-02 14:07:13+0200
